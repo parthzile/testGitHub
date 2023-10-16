@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Bubbling</h1>
+        <div id="outterBubble">
+            <div id="middleBubble">
+                <div id="innerBubble"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Event Capturing</h1>
+        <div id="outterCapture">
+            <div id="middleCapture">
+                <div id="innerCapture"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Event No Propagation</h1>
+        <div id="outterNoProp">
+            <div id="middleNoProp">
+                <div id="innerNoProp"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
